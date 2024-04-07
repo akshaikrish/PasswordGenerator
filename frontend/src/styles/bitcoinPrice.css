@@ -1,0 +1,84 @@
+.BitCoinPrices {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .BitCoinPrices label {
+    margin-right: 10px;
+  }
+  
+  .BitCoinPrices input[type="number"] {
+    width: 70px;
+  }
+  
+  .BitCoinPrices button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .BitCoinPrices button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .BitCoinPrices .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .priceList {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .priceTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .priceTable th, .priceTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 100px;
+  }
+  
+  .priceTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .priceTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .BitCoinPrices {
+      padding: 10px;
+    }
+    
+    .BitCoinPrices label {
+      display: block;
+      margin-bottom: 5px;
+      text-align: center; 
+    }
+    
+    .BitCoinPrices input[type="number"] {
+      width: calc(100% - 20px); 
+      margin-bottom: 10px;
+    }
+    
+    .BitCoinPrices button {
+      width: calc(100% - 20px);
+      margin-left: auto;
+      margin-right: auto; 
+    }
+  }
+  
